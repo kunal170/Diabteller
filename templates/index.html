@@ -1,0 +1,114 @@
+{% extends 'base.html' %} {% block title %} Home {% endblock title %} {% block
+body %}
+
+<div class="container">
+  <h2>
+    Please Fill the below Information to check wether you are diabetic or not
+  </h2>
+  <form class="row g-3 input-box" action="/result" method="POST">
+    <div class="col-md-6 col-xs-12 input-box">
+      <label for="glucose" class="form-label">Glucose Level</label>
+      <input type="number" class="form-control" name="glucose" id="glucose" />
+    </div>
+    <div class="col-md-6 col-xs-12 input-box">
+      <label for="blood pressure" class="form-label"
+        >Blood Pressure<span>*</span></label
+      >
+      <input
+        type="number"
+        class="form-control"
+        name="blood_pressure"
+        id="blood Pressure"
+        required
+      />
+    </div>
+    <div class="col-md-6 col-xs-12 input-box">
+      <label for="skin thickness" class="form-label"
+        >Skin Thickness(in mm)</label
+      >
+      <input
+        type="number"
+        class="form-control"
+        name="skin_thickness"
+        id="skin thickness"
+      />
+    </div>
+    <div class="col-md-6 col-xs-12 input-box">
+      <label for="Insulin" class="form-label"> Serum Insulin</label>
+      <input type="number" class="form-control" name="insulin" id="Insulin" />
+    </div>
+    <div class="col-md-6 col-xs-12 input-box">
+      <label for="height" class="form-label">Height(in cm)<span>*</span></label>
+      <input
+        type="number"
+        step="0.1"
+        class="form-control"
+        name="height"
+        id="height"
+        required
+      />
+    </div>
+    <div class="col-md-6 col-xs-12 input-box">
+      <label for="weight" class="form-label">Weight<span>*</span></label>
+      <input
+        type="number"
+        step="0.1"
+        class="form-control"
+        name="weight"
+        id="weight"
+        required
+      />
+    </div>
+
+    <div class="col-md-6 col-xs-12 input-box">
+      <label for="age" class="form-label">Age<span>*</span></label>
+      <input
+        type="number"
+        class="form-control input-box"
+        name="age"
+        id="age"
+        required
+      />
+    </div>
+
+    <div class="col-md-6 col-xs-12 text-center l1">
+      <label for="gender" class="form-label">Gender</label>
+      <select id="Gender" name="gender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="col-md-6 col-xs-12 text-center input-box l1">
+      <label for="inputEmail4" class="form-label"
+        >Past record of diabetes in your family?
+      </label>
+      <select id="family history" name="family_history" required>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+
+    <div class="col-md-6 col-xs-12 text-center input-box l1">
+      <label for="pregnancies" class="form-label"
+        >No of Pregnancies(Choose NA if you are Male)
+      </label>
+      <select id="pregnancies" name="pregnancies" required>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">more than 3</option>
+        <option value="0">NA</option>
+      </select>
+    </div>
+
+    <div class="col-12 text-center">
+      <button type="submit" class="btn btn-secondary btn-lg">Submit</button>
+    </div>
+    <div class="adj">
+      <h2>Hii!</h2>
+    </div>
+  </form>
+</div>
+{% endblock body %}

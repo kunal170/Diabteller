@@ -1,0 +1,18 @@
+To install Virtual Env, execute this two commands one by one:
+pip install virtualenv
+virtualenv Env
+
+To activate our virtual env, execute this command
+.\env\Scripts\activate.ps1
+
+Installing Flask:
+pip install flask
+
+Installing Pandas
+pip install pandas
+
+Installing scipy
+pip install scipy
+
+Installing numpy
+pip install numpy

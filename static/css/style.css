@@ -1,0 +1,49 @@
+h1 {
+  text-align: center;
+}
+
+.btn_div {
+  text-align: center;
+  padding-top: 100px;
+}
+.Thanks {
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+}
+button {
+  text-align: center;
+  padding-top: 400px;
+}
+
+footer {
+  text-align: center;
+  margin: 30px 0 0 0;
+  padding-top: 40px;
+  height: 100px;
+  background-color: rgb(157, 183, 204);
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  margin-bottom: 0;
+}
+
+label.form-label {
+  display: block;
+}
+
+span {
+  color: red;
+}
+
+.rslt {
+  padding: 40px;
+}
+
+.adj {
+  padding-top: 100px;
+}
+
+h2 {
+  visibility: hidden;
+}

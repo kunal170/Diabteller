@@ -1,0 +1,51 @@
+{% extends 'base.html' %} {% block title %} Result {% endblock title %} {% block
+body %}
+
+<div>
+  <div class="rslt">
+    <h1>These are the results based on your medical history</h1>
+  </div>
+
+  <div class="container-fluid rslt">
+    {% if values[0]>80 %}
+    <h1>
+      Alert! You seem to be at a very high risk of getting diabetes.Please seek
+      immediate medical attention.
+    </h1>
+    {% elif values[0]>50 %}
+    <h1>You are at a low risk of getting diabetes.</h1>
+    {% elif values[0]>20 %}
+    <h1>
+      You currently are at low risk of being diagnosed with diabetes but it
+      never hurts to take more care.
+    </h1>
+    {% else %}
+    <h1>All's fine! You seem to have very low chances of getting diabetes.</h1>
+    {% endif %}
+  </div>
+
+  <!-- 1. Alert! You seem to be at a very high risk of getting diabetes. <br> Please seek immediate medical attention. 
+         2. You are at an above average level of risk regarding diabetes. You must ensure extra precaution. 
+         3. You currently are at low risk of being diagnosed with diabetes but it never hurts to take more care.  
+         4. All's fine! You seem to have very low chances of getting diabetes.
+    
+    -->
+
+  <div class="btn_div">
+    <button
+      type="button"
+      class="btn btn-secondary"
+      onclick="window.location.href='/'"
+    >
+      <img src="static\images\home_2.png" />Home
+    </button>
+  </div>
+
+  <div class="Thanks">
+    <p>Thank you for using Diabeteller!</p>
+  </div>
+  <div class="adj">
+    <h2>Hii!</h2>
+  </div>
+</div>
+{% endblock body %}
